@@ -15,7 +15,7 @@ export interface AppConfig {
 }
 
 export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
-  const port = parseInt(env.PORT || env.PIENCODER_PORT || "3109", 10);
+  const port = parseInt(env.PORT || env.PIENCODER_PORT || "3104", 10);
   const host = env.HOST || env.PIENCODER_HOST || "0.0.0.0";
   const mode = env.NODE_ENV === "test" || env.PIENCODER_SIMULATION === "true" ? "simulation" : "production";
 

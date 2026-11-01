@@ -16,7 +16,7 @@ Hardware streaming encoder controller microservice for the Raspberry Pi producti
 - **Multi-Encoder Architecture**: Manage one or more physical encoder appliances (`encoder 1`, `encoder 2`, etc.).
 - **Dual Channel / Dual Stream Support**: Start, stop, and configure individual channels (`encoder1`, `encoder2`) or `both`.
 - **Busy Retry Queueing**: Robust command serialization to handle Matrox Monarch firmware `RETRY` responses.
-- **REST & SSE Endpoints**: Real-time event streaming and REST control on port `3109`.
+- **REST & SSE Endpoints**: Real-time event streaming and REST control on port `3104`.
 
 ## API Endpoints
 

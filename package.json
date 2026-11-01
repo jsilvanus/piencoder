@@ -30,7 +30,7 @@
   "pi": {
     "service": "piencoder",
     "displayName": "piencoder",
-    "port": 3109,
+    "port": 3104,
     "healthEndpoint": "/health",
     "envPortVar": "PIENCODER_PORT"
   }
