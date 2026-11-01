@@ -29,6 +29,7 @@
   ],
   "pi": {
     "service": "piencoder",
+    "layer": "Layer 1: Southbound hardware",
     "displayName": "piencoder",
     "port": 3104,
     "healthEndpoint": "/health",
