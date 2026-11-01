@@ -1,6 +1,7 @@
 {
   "name": "piencoder",
   "version": "0.1.0",
+  "packageManager": "pnpm@11.23.0",
   "description": "Multi-unit hardware streaming encoder controller service in the Raspberry Pi production ecosystem",
   "private": true,
   "type": "module",
@@ -25,5 +26,13 @@
   "files": [
     "dist",
     "bin"
-  ]
+  ],
+  "pi": {
+    "service": "piencoder",
+    "layer": "Layer 1: Southbound hardware",
+    "displayName": "piencoder",
+    "port": 3104,
+    "healthEndpoint": "/health",
+    "envPortVar": "PIENCODER_PORT"
+  }
 }
