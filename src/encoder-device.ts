@@ -7,6 +7,8 @@ import {
   type InputStatus
 } from "@jsilvanus/matrox-monarch-control";
 
+import { normalizeStatus } from "./monarch-status.js";
+
 export type EncoderTarget = 1 | 2 | "both";
 
 export interface MonarchDevice {
@@ -183,7 +185,7 @@ export class EncoderDevice {
 
   private async pollOnce(): Promise<void> {
     try {
-      const status = await this.enqueue((d) => d.getStatus());
+      const status = normalizeStatus(await this.enqueue((d) => d.getStatus()));
       this.updateState({
         connected: true,
         encoder1: status.encoder1,
